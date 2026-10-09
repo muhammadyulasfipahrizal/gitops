@@ -1,0 +1,17 @@
+replicaCount: 3
+
+image:
+  repository: harbor.k8s.local/production/pahri-k8s
+  tag: 83d53ca46675ee69e24fe36f759b5fd304c3055f
+
+service:
+  port: 8080
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+  limits:
+    cpu: 500m
+    memory: 512Mi
